@@ -1,0 +1,280 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.nav-link.active {
+  color: #603601;
+  font-weight: bold;
+}
+.navbar .nav-link:hover {
+  color: #c89b3c;
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover i {
+  color: #c89b3c;
+}
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+
+  background: radial-gradient(circle, #cc9544, #603601);
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero-title {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  animation: fadeSlide 1.2s ease;
+}
+
+.accent {
+  font-weight: bold;
+  color: #361500;
+}
+
+.hero-subtitle {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.hero-description {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: wheat;
+}
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-img {
+  box-sizing: border-box;
+  width: 400px;
+  border-radius: 50%;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 0 30px rgba(255, 254, 254, 0.758);
+  transition: 0.4s;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 220px;
+    margin-top: 20px;
+  }
+  .about img {
+    width: 220px;
+    margin: auto;
+  }
+  .about-title {
+    text-align: center;
+  }
+}
+
+.about {
+  background: #87551f;
+  text-align: justify;
+}
+.hello-title {
+  font-weight: bold;
+  color: white;
+}
+.para-title {
+  color: white;
+}
+.skill-title {
+  font-weight: bolder;
+}
+.about-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #361500;
+}
+
+.about-subtitle {
+  color: wheat;
+}
+
+.about-img {
+  display: block;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(231, 230, 229, 1.6);
+}
+
+.skill {
+  display: inline-block;
+  background: #222;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 14px;
+}
+.card {
+  margin-top: auto;
+}
+.card,
+.project-card {
+  box-shadow: 1px 1px 10px 10px rgba(226, 223, 223, 0.5);
+}
+.card-desgin {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+.card-body {
+  background: radial-gradient(circle, #cc9544, #603601);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 10px rgba(226, 223, 223, 0.5);
+}
+.card-text {
+  color: wheat;
+}
+#portfolio {
+  background-color: #222;
+}
+.portfolio-title {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+}
+.container-portfolio {
+  margin-block-start: 40px;
+  margin-inline: 30px;
+}
+.project-card {
+  border: none;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+.contact-section {
+  background: radial-gradient(circle, #cc9544, #603601);
+}
+
+.small-title {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.main-title {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: wheat;
+}
+
+.contact-card,
+.form-card {
+  background: #212529;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 10px rgba(226, 223, 223, 0.5);
+}
+.form-card {
+  height: 588px;
+}
+
+.card-title {
+  color: #603601;
+  font-weight: 650;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.follow-card {
+  background: #212529;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 10px rgba(226, 223, 223, 0.5);
+}
+
+input.form-control:focus {
+  outline: 3px solid #c9923d;
+}
+textarea.form-control:focus {
+  outline: 3px solid #c9923d;
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #cc9544, #603601);
+  border: none;
+  padding: 12px;
+
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+}
+.socials a {
+  font-size: 28px;
+  color: white;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #c89b3c;
+  transform: translateY(-5px);
+}
